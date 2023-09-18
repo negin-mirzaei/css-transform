@@ -46,6 +46,7 @@ section {
     width: 150px;
     height: 150px;
     background-color: rgba(128, 128, 128, 0.3);
+    transition: 0.1s;
 }
 
 .color{
