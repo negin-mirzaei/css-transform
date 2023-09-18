@@ -14,6 +14,11 @@ header{
     font-size: 2rem;
 }
 
+/* main{
+    margin: 20px;
+    padding: 30px;
+} */
+
 section {
     margin:  0 50px;
     display: flex;
@@ -46,13 +51,15 @@ section {
     width: 150px;
     height: 150px;
     background-color: rgba(128, 128, 128, 0.3);
+    /* perspective: 300px; */
 }
 
 .color{
-    width: 150px;
-    height: 150px;
+    min-width: 150px;
+    min-height: 150px;
     background-color: rgba(187, 87, 212, 0.49);
-    transition: all 1s;
+    /* transition: 1s; */
+    /* perspective: 300px; */
 }
 
 #one:hover {
@@ -97,4 +104,81 @@ section {
 
 #eleven:hover {
     transform: translateY(3.5rem);
+}
+
+#twelve:hover {
+    transform: skewY(45deg) scale(2) translateX(2.2rem) translateY(-2rem);
+}
+
+#thirteen:hover {
+    transform: perspective(300px) scale3d(1, 1, 2) rotate3d(1, 0, 0, 50deg); 
+ } 
+
+#fourteen:hover {
+    transform: perspective(300px) scale3d(1, 1, 2) rotate3d(0, 1, 0, 50deg);;
+}
+
+#fifteen:hover {
+    transform: rotate(45deg);
+    transform-origin: top right;
+}
+
+#sixteen:hover {
+    transform: rotate(45deg);
+    transform-origin: bottom left;
+}
+
+#seventeen:hover {
+    transform: perspective(300px) rotate3d(2, 0, 0, 40deg) scale3d(1, 1, 2);
+    transform-origin: bottom center;
+}
+
+#eighteen:hover {
+    transform: perspective(300px) rotate3d(-2, 0, 0, -60deg) scale3d(1, 1, 2);
+    transform-origin: top center;
+}
+
+#nineteen:hover {
+    transform: perspective(300px) rotate3d(0,2,0,40deg) scale3d(1,1,2);
+    transform-origin: center left;
+}
+
+#twenty:hover {
+    transform: perspective(300px) rotate3d(0,-2,0,-60deg) scale3d(1,1,2);
+    transform-origin: center right;
+}
+
+#twenty-one:hover {
+    transform: scale(2);
+    transform-origin: top right;
+}
+
+#twenty-two:hover {
+    transform: scale(2);
+    transform-origin: bottom left;
+}
+
+#twenty-three:hover {
+    transform: scaleX(2);
+    transform-origin: center right;
+}
+
+#twenty-four:hover {
+    transform: scaleX(2);
+    transform-origin: center left;
+}
+
+#twenty-five:hover {
+    transform: scaleY(2);
+    transform-origin: top center;
+}
+
+#twenty-six:hover {
+    transform: scaleY(2);
+    transform-origin: bottom center;
+}
+
+.ref {
+    margin: 30px;
+    padding: 100px;
 }
